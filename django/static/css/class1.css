@@ -1,0 +1,54 @@
+#myTable {
+    border-collapse: collapse;
+    /* Ensures borders are combined */
+    width: 100%;
+    /* Optional: Makes the table full width */
+}
+
+#myTable th,
+#myTable td {
+    border: 1px solid #ddd;
+    /* Change color and style as needed */
+    padding: 8px;
+    /* Optional: Adds padding for better spacing */
+}
+
+#myTable th {
+    background-color: #f2f2f2;
+}
+
+#myTable tr:hover {
+    background-color: #f1f1f1 !important;
+}
+
+.formInputs {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    margin: 1rem 3rem;
+
+    @media screen and (max-width: 567px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.formInputs div {
+    width: 100%;
+}
+
+.formInputs select {
+    width: 100% !important;
+    flex: 1;
+    padding: 2rem;
+    border: 1 px solid rgb(49, 49, 49);
+}
+
+.formInputs input {
+    width: 100%;
+
+    @media screen and (max-width: 567px) {
+        .formInputs input .onMobile {
+            width: 50% !important;
+        }
+    }
+}

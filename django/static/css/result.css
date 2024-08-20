@@ -1,0 +1,18 @@
+
+
+.formInputs div{
+    width: 100%;
+}
+
+.formInputs select{
+    width: 90% !important;
+    flex: 1;
+    padding: 1rem;
+    border: 1 px solid rgb(49, 49, 49);
+}
+
+@media  screen and (max-width: 768px) {
+    label{
+        font-size: 1rem;
+    }
+}
